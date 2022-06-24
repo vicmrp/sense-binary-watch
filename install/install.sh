@@ -29,13 +29,13 @@ useradd -r -s /usr/sbin/nologin binary-watch-usr
 
 # chown -R binary-watch-usr:binary-watch-usr /usr/local/sense-binary-watch
 # chmod +x /usr/local/sense-binary-watch/program/binary_watch.py
-chmod 777 ./binary_watch.py
+chmod 777 ./binary-watch.py
 
 
 #make program available global
 if file not exist 
 if [ ! -f /usr/bin/binary_watch ]; then
-    cp ./binary_watch.py /usr/bin/binary_watch
+    cp ./binary-watch.py /usr/bin/binary_watch
 fi
 
 
