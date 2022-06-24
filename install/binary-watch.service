@@ -1,0 +1,12 @@
+[Unit]
+Description=binary-watch
+
+[Service]
+User=pi
+WorkingDirectory=/usr/local/sense-binary-watch/program
+ExecStart=python binary-watch.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
