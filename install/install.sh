@@ -28,14 +28,14 @@ pip install sense_hat
 useradd -r -s /usr/sbin/nologin binary-watch-usr
 
 # chown -R binary-watch-usr:binary-watch-usr /usr/local/sense-binary-watch
-# chmod +x /usr/local/sense-binary-watch/program/binary_watch.py
+# chmod +x /usr/local/sense-binary-watch/program/binary-watch.py
 chmod 777 ./binary-watch.py
 
 
 #make program available global
 if file not exist 
-if [ ! -f /usr/bin/binary_watch ]; then
-    cp ./binary-watch.py /usr/bin/binary_watch
+if [ ! -f /usr/bin/binary-watch ]; then
+    cp ./binary-watch.py /usr/bin/binary-watch
 fi
 
 
@@ -67,3 +67,4 @@ systemctl enable binary-watch.service
 systemctl start binary-watch.service
 
 
+exit
