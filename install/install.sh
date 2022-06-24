@@ -33,10 +33,8 @@ chmod 777 ./binary-watch.py
 
 
 #make program available global
-if file not exist 
-if [ ! -f /usr/bin/binary-watch ]; then
-    cp ./binary-watch.py /usr/bin/binary-watch
-fi
+cp ./binary-watch.py /usr/bin/binary-watch
+
 
 
 
