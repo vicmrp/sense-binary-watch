@@ -2,9 +2,9 @@
 Description=binary-watch
 
 [Service]
-User=pi
-WorkingDirectory=/usr/local/sense-binary-watch/program
-ExecStart=python binary-watch.py
+User=binary-watch-usr
+WorkingDirectory=/usr/bin
+ExecStart=python binary_watch
 Restart=always
 
 [Install]

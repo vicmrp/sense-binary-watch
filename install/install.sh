@@ -22,19 +22,20 @@ apt-get install pip -y
 pip install sense_hat
 
 # Copy program to /usr/local/sense-binary-watch
-cp -r ../../sense-binary-watch /usr/local/sense-binary-watch
+# cp -r ../../sense-binary-watch /usr/local/sense-binary-watch
 
 # Create system user
 useradd -r -s /usr/sbin/nologin binary-watch-usr
-chown -R binary-watch-usr:binary-watch-usr /usr/local/sense-binary-watch
+
+# chown -R binary-watch-usr:binary-watch-usr /usr/local/sense-binary-watch
 # chmod +x /usr/local/sense-binary-watch/program/binary_watch.py
-chmod 777 /usr/local/sense-binary-watch/program/binary_watch.py
+chmod 777 ./binary_watch.py
 
 
-make program available global
+#make program available global
 if file not exist 
 if [ ! -f /usr/bin/binary_watch ]; then
-    cp /usr/local/sense-binary-watch/binary_watch.py /usr/bin/binary_watch
+    cp ./binary_watch.py /usr/bin/binary_watch
 fi
 
 
