@@ -18,6 +18,9 @@ apt-get update -y && apt-get upgrade -y
 # install pandoc
 apt-get install pandoc -y
 
+apt-get install pip -y
+pip install sense_hat
+
 # Copy program to /usr/local/sense-binary-watch
 cp -r ../../sense-binary-watch /usr/local/sense-binary-watch
 

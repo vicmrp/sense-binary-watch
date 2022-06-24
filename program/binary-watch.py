@@ -5,7 +5,6 @@ import sys
 from datetime import datetime
 import signal
 import time
-import readchar
 import random
 from signal import pause
 from classes.Button_Handler import Button_Handler
