@@ -7,8 +7,12 @@ import signal
 import time
 import random
 from signal import pause
-from classes.Button_Handler import Button_Handler
 from sense_hat import SenseHat, ACTION_PRESSED, ACTION_HELD, ACTION_RELEASED
+
+
+class Button_Handler:
+    last_pushed_direction = "up"
+
 
 def exit_handler(signum, frame):
     sense = SenseHat()

@@ -31,11 +31,11 @@ chown -R binary-watch-usr:binary-watch-usr /usr/local/sense-binary-watch
 chmod 777 /usr/local/sense-binary-watch/program/binary_watch.py
 
 
-# make program available global
-# if file not exist 
-# if [ ! -f /usr/bin/binary_watch ]; then
-#     cp /usr/local/sense-binary-watch/program/binary_watch.py /usr/bin/binary_watch
-# fi
+make program available global
+if file not exist 
+if [ ! -f /usr/bin/binary_watch ]; then
+    cp /usr/local/sense-binary-watch/binary_watch.py /usr/bin/binary_watch
+fi
 
 
 
